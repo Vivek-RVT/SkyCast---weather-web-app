@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchBtn.addEventListener("click", () => {
         let location_1 = inputField.value; 
-        url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location_1}&aqi=no`;
+        url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location_1}&aqi=no`;
         fetchWeather(url);
     });
 
