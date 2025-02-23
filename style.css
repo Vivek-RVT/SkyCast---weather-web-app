@@ -1,0 +1,362 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+:root{
+    --text-color:white;
+
+
+}
+body{
+    
+    background: url(assit/pexels-jimbear-1117403.jpg);
+    background-size: cover;
+    /* backdrop-filter: vis; */
+    /* background-color: rgb(70, 70, 70); */
+}
+.logo {
+    align-items: center;
+    display: flex
+;
+}
+nav{
+   
+    margin: 10px 20px 20px 20px ;
+    background-color: blue;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+    z-index: 34;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    backdrop-filter: blur(15px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    /* flex-direction: row; */
+    z-index: 1000; /* Ensure it's above other elements */
+    position: relative; /* Needed for z-index to work */
+    
+}
+.nav-left{
+    gap: 40px;
+    display: flex;
+
+}
+.right-nav{
+    gap: 20px;
+    display: flex;
+}
+.menu ul{
+    cursor: pointer;
+}
+
+.menu{
+    gap: 20px;
+    align-items: center;
+    display: flex;
+}
+.nav-left{
+    gap: 20px;
+    display: flex;
+}
+.right-nav-menu{
+    gap: 20px;
+    display: flex;
+}
+
+.search-cont input{ 
+font-size: 1.2rem;
+outline: none;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-cont{ 
+    /* padding-bottom: 240px; */
+    height: 100%; 
+padding: 15px;
+margin: 20px;
+backdrop-filter: blur(15px); /* Apply blur effect */
+-webkit-backdrop-filter: blur(15px); /* Safari support */
+/* flex-direction: row; */
+    width: 95%;
+    /* height: 20px; */
+} 
+.main-1{
+    justify-content: space-between;
+    display: flex;
+}
+.last-upldated{
+    color: rgb(223, 223, 223);
+}
+.time{ 
+    margin-bottom: 30px; 
+margin-top: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+.t-left{
+    /* color */
+    gap: 20px;
+    display: flex;
+}
+
+#D-mod{  
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    background-color: rgba(160, 160, 160, 0.541); 
+}
+.weather-icon img{
+    width: 120px;
+}
+
+.temp{
+font-size: 60px;
+} 
+.weather-icon{ 
+    align-items: center;
+    display: flex;
+    /* gap: 30px; */
+}
+.weather-st{
+    margin-left: 20px;
+    flex-direction: column;
+    display: flex;
+}
+.Cloud-Cover{gap: 10px; 
+margin-top: 30px;
+margin-bottom: 30px;
+    display: flex;
+}
+
+
+
+.main-2-other{ 
+    
+    align-items: center;
+    width: 100%;
+gap: auto;
+gap: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(160px,5fr));
+}
+
+.detall{  
+    border-right: 1px solid rgba(255, 255, 255, 0.329);
+    font-size: .9rem;  
+    gap: 5px;
+    
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    /* padding: 5px; */
+    /* padding-right: 10px; */
+    background-color: rgba(127, 255, 212, 0);
+}
+
+.det-img img{
+    width: 36px;
+}
+main{ 
+    display: flex;
+}
+.main-other-d {
+    width: 24%;
+    height: 85vh; 
+}
+
+.weather-summary{
+    padding: 10px;
+
+
+}
+.t-right{
+
+    gap: 30px;
+    display: flex; 
+}
+.cur-day{
+    border-radius: 10px;
+    padding-right:10px; 
+    padding-left: 10px;
+
+    background-color: rgba(110, 110, 110, 0.548);
+    font-size: 1.2rem;
+    display: flex; 
+    align-items: center;
+}
+.cur-day img{
+
+    width: 25px;
+}
+.search-cont{
+display: flex;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+backdrop-filter: blur(45px); /* Apply blur effect */
+-webkit-backdrop-filter: blur(45px); /* Safari support */
+}
+.search-button img{
+    border-left: 1px solid rgb(255, 255, 255);
+    /* flex-direction: row; */
+    padding: 5px;
+    cursor: pointer;
+ filter: invert(1);
+
+    /* border-radius: 20px; */
+width: 30px;
+}
+/* .search-button{ 
+font-size: 1.1rem;
+    padding: 2px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 10px 10px 0px; 
+} */
+/* .weather-summary p{
+    direction: po;
+} */
+ .tp-menu{
+    cursor: pointer;
+    display: none;
+    position: relative;
+ }
+ .tp-menu-cont{
+    display: none;
+ /* padding: 10px; */
+top: 70px; 
+right: -640%; 
+display: none;
+position: absolute; /* Ensure position is set */
+z-index: 999; /* Higher than other elements */
+    background-color: rgba(34, 34, 34, 0.753);
+    position: absolute;
+
+ }
+ .menutp{
+    backdrop-filter: blur(37px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(37px); /* Safari support */
+    /* flex-direction: row; */
+    /* align-items: ;
+    display: flex; */
+    width: 130px;
+    padding: 10px; 
+ }
+ .menutp ul{
+    padding: 7px;
+ }
+ .menutp ul:hover{ 
+   
+    background-color: rgb(146, 146, 146);
+/* border-bottom: 1px solid rgba(255, 255, 255, 0.26); */
+ }
+.tp-icon{
+
+    width: 32px;
+}
+.phw{
+    display: none;
+}
+@media screen and (max-width: 867px) {
+.menu{
+display: none;
+}
+.tp-menu{
+    display: inline-block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.cont {
+    border-radius: 10px;
+    color: var(--text-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.308);
+}
+:root {
+    --text-color: white;
+}
+.t-left {
+    font-size: .87rem;}
+    .search-cont input {
+        font-size: 1rem;
+        
+                padding-left: 10px;
+        width: auto;}
+
+
+        .search-button img {
+            border-left: 1px solid rgb(255, 255, 255);
+            /* flex-direction: row; */
+            padding: 5px;
+            cursor: pointer;
+            filter: invert(1);
+            /* border-radius: 20px; */
+            width: 22px;
+        }
+        .search-cont input {
+            font-size: .8rem;
+            outline: none;
+            padding: 3px;
+            border: none;
+            border-radius: 5px;
+        }        
+        .search-cont input {
+            width: 123px;
+        }
+        .t-right {
+            gap: 12px;
+            display: flex
+        ;
+        }
+        .feel-l{
+            /* display: none; */
+        }
+        .ph{
+            display: flex;
+        }
+    .main-2-other {
+        align-items: center;
+        width: 100%;
+        gap: auto;
+        gap: 20px;
+        display: grid
+    ;
+        grid-template-columns: repeat(auto-fit, minmax(115px, 5fr));
+    }
+    .main-1 {
+        gap: 12px;
+        font-size: 0.9rem;
+        justify-content: space-between;
+        display: flex
+;
+    }
+    .temp {
+        font-size: 52px;
+    }
+    .dww{
+        display: none;
+    }
+    .Cloud-Cover {
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: flex
+    ;
+    }
+    .phw{
+display: flex;
+flex-direction: column;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globalstyle.css">
+</head>
+
+<body>
+    <nav class="cont">
+        <div class="nav-left ">
+            <div class="logo">
+
+
+
+                <h3>SkyCast
+                </h3>
+            </div>
+
+            <div class="menu">
+                <ul>Home</ul>
+                <ul>Forecast</ul>
+                <ul>Air QUality</ul>
+                <ul>Weather Alerts</ul>
+                <ul>About </ul>
+                <ul>Contact us</ul>
+
+            </div>
+
+        </div>
+        </div>
+        <div class="right-nav">
+            <div class="search-cont">
+                <input type="search" placeholder="type... State/country">
+                <!-- <button class="search-button"> Search</button> -->
+                <div class="search-button">
+                    <img src="assit/search.svg" alt="">
+                </div>
+            </div>
+            <div class="tp-menu">
+                <div class="tp-icon">
+                    <img src="assit/menu.svg" alt="">
+                </div> 
+                <div class="tp-menu-cont cont not-ac">
+                    <div class="menutp">
+                        <ul>Home</ul>
+                        <ul>Forecast</ul>
+                        <ul>Air QUality</ul>
+                        <ul>Weather Alerts</ul>
+                        <ul>About </ul>
+                        <ul>Contact us</ul>
+        
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-cont cont">
+            <div class="main-1">
+                <div class="cur-location">
+                    location..
+                </div>
+                <div class="last-upldated">
+                    last-updated : 0-0-0
+                </div>
+            </div>
+            <hr>
+            <div class="main-2">
+                <div class="main-2-left">
+                    <div class="time">
+                        <div class="t-left">
+                        <div class="time-text">Current Weather</div>
+                        <div class="time-t">00:00 AM/PM </div>
+                       
+                    </div>
+                    <div class="t-right">
+                        <div class="cur-day">
+                            <img src="assit/uvrays.svg" alt="">
+                            <div class="cur-day-tex">
+                                day
+                            </div>
+                        </div>
+                        <select id="D-mod">
+                            <option value="C">(C)</option>
+                            <option value="F">(F)</option>
+                          </select>
+                    </div>
+                    </div>
+                    <div class="weather-icon">
+                        <img src="" alt="">
+                        <div class="temp">
+                            00
+
+                        </div>
+                        
+                        <div class="weather-st dww">
+                          <div class="w-st">-----</div>
+                       
+                        <div class="feel-l">
+                            feel like 00*
+                        </div> </div>
+                    </div>
+
+                </div>
+                <div class="weather-st phw">
+                    <div class="w-st pw-st">-----</div>
+                 
+                  <div class="feel-l pfeel-l">
+                      feel like 00*
+                  </div> </div>
+              </div>
+                <div class="Cloud-Cover">
+                    Cloud Cover <div class="cc-v pcc-v" >0%</div>
+                    <div class="cc-in pcc-in">
+                        mostly clear
+                    </div>
+                </div>
+                <hr> 
+                <div class="main-2-other">
+                    <div class="det2 detall"><div class="det-img"><img src="assit/humindity.svg" alt=""></div><div class="det-right"><div class="det-tit">Humidity</div><div class="det-detail hum-d">0/0</div></div></div>
+                    <div class="det1 detall"><div class="det-img"><img src="assit/wind.svg" alt=""></div><div class="det-right"><div class="det-tit ">Wind Speed</div><div class="det-detail win-d">0/0</div></div></div>
+                    <div class="det3 detall"><div class="det-img"><img src="assit/presure.svg" alt=""></div><div class="det-right"><div class="det-tit">Pressure</div><div class="det-detail pre-d">0/0</div></div></div>
+                    <div class="det4 detall"><div class="det-img"><img src="assit/dew.svg" alt=""></div><div class="det-right"><div class="det-tit">Dew Point</div><div class="det-detail dew-d">0/0</div></div></div>
+                    <div class="det5 detall"><div class="det-img"><img src="assit/uvrays.svg" alt=""></div><div class="det-right"><div class="det-tit">UV Index</div><div class="det-detail uv-d">0/0</div></div></div>
+                    <div class="det6 detall"><div class="det-img"><img src="assit/rain.svg" alt=""></div><div class="det-right"><div class="det-tit">Precipitation</div><div class="det-detail preci-d">0/0</div></div></div>
+                    <div class="det7 detall"><div class="det-img"><img src="assit/eye.svg" alt=""></div><div class="det-right"><div class="det-tit">Visibility</div><div class="det-detail visi-d">0/0</div></div></div>
+                    <div class="det8 detall"><div class="det-img"><img src="assit/wind-derc.svg" alt=""></div><div class="det-right"><div class="det-tit">Wind direction</div><div class="det-detail wind-dir-d">0/0</div></div></div>
+                    <div class="det9 detall"><div class="det-img"><img src="assit/wind-gust.svg" alt=""></div><div class="det-right"><div class="det-tit">Wind gusts</div><div class="det-detail wind-g-d">0/0</div></div></div>
+                    <div class="det10 detall"><div class="det-img"><img src="assit/compass.svg" alt=""></div><div class="det-right"><div class="det-tit">Wind Degree</div><div class="det-detail wind-deg-d">0/0</div></div></div>
+                </div>
+            </div>
+
+        </div>
+
+       
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
