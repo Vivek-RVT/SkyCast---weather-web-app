@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBtn = document.querySelector('.search-button');
 
     let location_2 = "India";  
-    let url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location_2}&aqi=no`;
+    let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location_2}&aqi=no`;
 
     // Fetch default weather on page load
     fetchWeather(url);
